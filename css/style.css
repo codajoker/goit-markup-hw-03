@@ -119,14 +119,15 @@ nav {
 }
 /* Герой  */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 85px;
 }
 .hero .hero-title {
-  margin-left: 0;
-  margin-right: 0;
   margin-bottom: 30px;
+  padding-left: 256px;
+  padding-right: 256px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -135,6 +136,7 @@ nav {
   color: var(--primary-white-color);
 }
 .hero .main-button {
+  padding: 10px 32px;
   text-align: center;
   font-family: Roboto;
   font-weight: 700;
@@ -142,6 +144,8 @@ nav {
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   color: var(--primary-white-color);
   cursor: pointer;
 }
@@ -153,13 +157,16 @@ nav {
 .features-list {
   display: flex;
 }
+.features-list .feature-item {
+  width: calc((100% - 90px) / 4);
+}
 .features-list .feature-item + .feature-item {
   margin-left: 30px;
 }
 .features-list .title {
   margin-bottom: 10px;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -170,6 +177,10 @@ nav {
   color: var(--text-descr);
 }
 /* Предложения */
+.offers-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 .offers .title {
   margin-bottom: 50px;
@@ -190,8 +201,14 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team-list {
+  display: flex;
+}
 .team-list .team-item {
-  padding: 0 0 30px 0;
+  padding-bottom: 30px;
+}
+.team-list .team-item + .team-item {
+  margin-left: 30px;
 }
 .team-item img {
   margin-bottom: 30px;
@@ -252,11 +269,12 @@ footer .logo {
 
 /* Фильтры */
 .filters-list.list {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 34px;
 }
 .filters-list .button-item {
-  display: inline-block;
+  margin-right: 8px;
 }
 .filters-list .button-link {
   font-family: Roboto;
@@ -280,13 +298,30 @@ footer .logo {
   background-color: var(--blue-color);
 }
 /* Работы */
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .work-list .work-item {
-  padding: 0 0 20px 0;
+  flex-basis: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.work-list .work-item:nth-child(3n) {
+  margin-right: 0;
+}
+.work-list .work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 .work-item img {
-  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+}
+.work-item .item-text {
+  padding-top: 20px;
 }
 .work-item .title {
   margin-bottom: 4px;
