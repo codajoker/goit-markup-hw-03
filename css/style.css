@@ -154,6 +154,9 @@ nav {
   background-color: #188ce8;
 }
 /* Особености */
+.features {
+  padding-top: 85px;
+}
 .features-list {
   display: flex;
 }
