@@ -28,6 +28,11 @@ ul {
   margin-right: 0;
   padding: 0;
 }
+button,
+button:active,
+button:focus {
+  outline: none;
+}
 .list {
   text-decoration: none;
   list-style: none;
@@ -156,6 +161,7 @@ nav {
 /* Особености */
 .features {
   padding-top: 85px;
+  padding-bottom: 0;
 }
 .features-list {
   display: flex;
@@ -174,6 +180,7 @@ nav {
   text-transform: uppercase;
 }
 .features-list .descr {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -214,7 +221,6 @@ nav {
   margin-left: 30px;
 }
 .team-item img {
-  margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -226,6 +232,9 @@ nav {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.team-list .descr {
+  padding: 30px 0px;
 }
 .team-list .descr-item {
   font-size: 16px;
@@ -266,20 +275,17 @@ footer .logo {
 }
 /* Портфолио */
 
-.portfolio-title {
-  visibility: hidden;
-}
-
 /* Фильтры */
 .filters-list.list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filters-list .button-item {
   margin-right: 8px;
 }
 .filters-list .button-link {
+  padding: 6px 22px;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -311,7 +317,6 @@ footer .logo {
   margin-bottom: 30px;
   padding-bottom: 20px;
   background: var(--primary-white-color);
-  border-bottom: 1px solid #eeeeee;
 }
 .work-list .work-item:nth-child(3n) {
   margin-right: 0;
@@ -324,7 +329,10 @@ footer .logo {
   width: 100%;
 }
 .work-item .item-text {
-  padding-top: 20px;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 .work-item .title {
   margin-bottom: 4px;
