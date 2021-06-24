@@ -60,9 +60,7 @@ section {
   border: 1px solid #ececec;
   padding: 24px 0 25px 0;
 }
-.header.main {
-  margin-bottom: 9px;
-}
+
 .header-flex {
   display: flex;
   align-items: center;
